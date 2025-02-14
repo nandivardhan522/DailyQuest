@@ -1,6 +1,6 @@
 import math
 class Solution:
-    def minEatingSpeed(self, piles, h: int) -> int:
+    def minEatingSpeed(self, piles, h):
         def getHours(num):
             hours = 0
             for pile in piles:

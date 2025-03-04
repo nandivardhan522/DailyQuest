@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+    def rightSideView(self, root):
         if(not root):
             return []
         queue=[]
@@ -27,3 +27,8 @@ class Solution:
                 ele.append(temp[-1].val)
                 queue=temp.copy()
                 temp=[]
+
+'''
+Time Complexity: O(n), where n is the number of nodes in the binary tree.
+Space Complexity: O(n), in the worst case, due to the queue and temp lists.
+'''
